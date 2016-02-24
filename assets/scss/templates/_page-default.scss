@@ -1,4 +1,12 @@
-#page {
+#page{
+  margin-top: rem-calc(16);
+}
+
+.sidebarnav{
+  margin-bottom: rem-calc(30);
+}
+
+/*#page {
   @include grid-row();
   margin-top: 3rem;
 
@@ -13,3 +21,4 @@
   }
 
 }
+*/

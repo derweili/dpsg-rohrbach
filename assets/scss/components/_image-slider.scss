@@ -1,0 +1,51 @@
+.image-slider ul{
+	@include box-shadow($dpsg-shadow);
+	border: 10px solid #fff;
+	img{
+		width: 100%
+	}
+
+	//Slider Description
+	hgroup{
+		position: absolute;
+	    z-index: 2;
+	    bottom: 0;
+	    left: 0;
+	    margin: 0;
+	    padding: 0;
+	    .headline01 {
+		    bottom: rem-calc(95px);
+		    left: 1.5em;
+		}
+		.headline02 {
+		    bottom: 1.2em;
+		    left: 2.5em;
+		}
+		h2{
+			background: rgba(255,255,255,0.7);
+		    position: absolute;
+		    white-space: nowrap;
+		    margin: 0;
+		    padding: 0.2em 0.4em;
+		    font-size: rem-calc(33);
+		    font-weight: normal;
+		}
+	}
+
+}
+
+.image-slider{
+	.orbit-bullets{
+		button{
+			margin: rem-calc(4 28);
+			color: $primary-color;
+			&.is-active{
+				color: $red;
+			}
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+
+	}
+}

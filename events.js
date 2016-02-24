@@ -1,0 +1,1 @@
+{"@context":"http:\/\/schema.org","@type":"WebSite","url":"http:\/\/dpsg-rohrbach.de\/","name":"DPSG Sinsheim-Rohrbach","potentialAction":{"@type":"SearchAction","target":"http:\/\/dpsg-rohrbach.de\/?s={search_term_string}","query-input":"required name=search_term_string"}}

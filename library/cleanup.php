@@ -253,4 +253,12 @@ remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wr
 add_action('woocommerce_before_main_content', 'foundationpress_before_content', 10);
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
 add_action('woocommerce_after_main_content', 'foundationpress_after_content', 10);
+
+//Emoji support
+remove_action('wp_head','rest_output_link_wp_head',10);
+remove_action('wp_head','wp_oembed_add_discovery_links',10);
+add_filter('rest_enabled','_return_false');
+add_filter('rest_jsonp_enabled','_return_false');
+
+
 ?>

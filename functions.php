@@ -15,6 +15,9 @@
  * @since FoundationPress 1.0.0
  */
 
+if( ! isset( $content_width ) ) $content_width = 770;
+
+
 /** Various clean up functions */
 require_once( 'library/cleanup.php' );
 
@@ -47,5 +50,18 @@ require_once( 'library/sticky-posts.php' );
 
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/protocol-relative-theme-assets.php' );
+
+require_once( 'library/metaheader.php' );
+
+
+require_once( 'library/image-sizes.php' );
+
+require_once( 'library/lazy-loading.php' );
+
+//Events
+require_once( 'library/register-events.php' );
+
+//Events
+require_once( 'library/event-functions.php' );
 
 ?>

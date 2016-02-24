@@ -1,6 +1,6 @@
 {
-  "name": "foundationpress",
-  "title": "FoundationPress",
+  "name": "dpsg-rohrbach",
+  "title": "DPSG Rohrbach",
   "version": "2.3.0",
   "description": "FoundationPress is a WordPress starter theme based on Foundation 6 by Zurb",
   "keywords": [
@@ -11,7 +11,9 @@
     "semantic",
     "mobile first",
     "customizable",
-    "responsive"
+    "responsive",
+    "dpsg",
+    "scout"
   ],
   "homepage": "http://foundationpress.olefredrik.com/",
   "bugs": "https://github.com/olefredrik/FoundationPress/issues",

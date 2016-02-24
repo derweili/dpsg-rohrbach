@@ -1,0 +1,6 @@
+.pagination li:not(.current) a:hover{
+	background-color: transparent;
+}
+.pagination li.current a{
+	color: $white;
+}

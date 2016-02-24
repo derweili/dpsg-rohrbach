@@ -29,6 +29,7 @@
   .menu .home a {
     font-size: 1rem;
     color: #B9B9B9;
+    padding: 9px 0!important;
   }
 
   .menu a {
@@ -38,20 +39,56 @@
     padding-top: 0;
     padding-bottom: 0;
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: rem-calc(17.6);
+    font-family: $header-font-family;
 
     &:hover:not(.button) {
-      background-color: #2a2a2a;
+      //background-color: #2a2a2a;
     }
   }
 
-  .menu>li:not(.menu-text)>a { padding: 1rem; }
-  .menu li:not(:last-child) { border-right: 1px solid #4e4e4e; }
+  .menu>li:not(.menu-text)>a {
+    padding: rem-calc(14.08 17.6); 
+    line-height: rem-calc(20);
+    font-weight: 800;
+    color: white;
+  }
+  .menu li:not(:last-child) { /*border-right: 1px solid #4e4e4e; */}
 
-  .dropdown.menu .submenu {
-    background-color: #121212;
-    color: #e6e6e6;
+  .dropdown.menu .submenu { //Dropdown
+    background-color: $white;
+    @include box-shadow(0px 3px 3px rgba(0,48,86,0.2));
+    @include border-radius(2px);
     border: 0;
+    padding: 5px 0;
+    li{
+      padding: 0.3em 0.6em;
+    }
+    a{
+      color: $primary-color;
+      font-weight: normal;
+      margin: 0.2em 0 0 1.0em;
+      padding: 0;
+      height: auto;
+      &:hover{
+        color: $red;
+        text-decoration: underline;
+      }
+      &:before{ // Before Arrow Icon
+        border: 4px solid #b2c0cc;
+        content: " ";
+        height: 0;
+        padding: 0;
+        margin: 8px -6px -20px 2px;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        padding: 0;
+        float: left;
+        margin-left: -13px;
+        margin-top: 5px;
+      }
+    }
   }
 
   .dropdown.menu .has-submenu.is-down-arrow a { padding-right: 1rem; }

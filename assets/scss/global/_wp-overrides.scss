@@ -1,13 +1,37 @@
 .wp-caption{
   padding:rem-calc(4);
+  background-color: white;
+  margin-bottom: rem-calc(20);
+  max-width: 100%;
 }
 
 .wp-caption img{
   max-width:100%;
+  padding: rem-calc(5);
 }
 
 p.wp-caption-text{
   font-size:90%;
   color: #666;
-  padding:rem-calc(10) 0;
+  padding:rem-calc(10);
+  background: white;
+  text-align: left;
+}
+
+.alignright {
+    float: right;
+    margin-left: rem-calc(20);
+    margin-bottom: rem-calc(20);
+}
+
+.alignleft {
+    float: left;
+    margin-right: rem-calc(20);
+    margin-bottom: rem-calc(20);
+}
+
+.post-password-form input[type="submit"]{
+	@include button-style();
+	border: none;
+	padding: 10px 20px;
 }
