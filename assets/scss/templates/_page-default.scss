@@ -1,3 +1,6 @@
+.imagewrapper:not(:last-child){
+  margin-bottom: rem-calc(30);
+}
 #page{
   margin-top: rem-calc(16);
 }

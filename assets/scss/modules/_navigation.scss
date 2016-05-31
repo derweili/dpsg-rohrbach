@@ -93,4 +93,16 @@
 
   .dropdown.menu .has-submenu.is-down-arrow a { padding-right: 1rem; }
   .dropdown.menu .has-submenu.is-down-arrow>a::after { border: 0; }
+
+
+  @media screen and (max-width: 680px) {
+    .menu>li:not(.menu-text)>a {
+      padding: rem-calc(14.08 7.6); 
+      &:after{
+        display: none;
+      }
+    }
+  }
 }
+
+

@@ -9,13 +9,13 @@
 
 get_header(); ?>
 
-<div id="single-post" role="main">
+<div id="single-post" role="main" data-equalizer data-equalize-on="medium">
 
 <?php do_action( 'foundationpress_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
-	<article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
+	<article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>" data-equalizer-watch>
 		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( '', array('class' => 'th') ); ?>
+			<?php the_post_thumbnail( 'singlefeature', array('class' => 'th') ); ?>
 		<?php endif; ?>
 		<header>
 			<h1 class="post-title"><?php the_title(); ?></h1>

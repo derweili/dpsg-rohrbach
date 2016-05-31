@@ -15,6 +15,7 @@
  * @since FoundationPress 1.0.0
  */
 
+//Set WP Content Width
 if( ! isset( $content_width ) ) $content_width = 770;
 
 
@@ -53,15 +54,19 @@ require_once( 'library/sticky-posts.php' );
 
 require_once( 'library/metaheader.php' );
 
+require_once( 'library/dpsg-cleanup.php' );
+
 
 require_once( 'library/image-sizes.php' );
 
 require_once( 'library/lazy-loading.php' );
 
-//Events
-require_once( 'library/register-events.php' );
+require_once( 'library/amp.php' );
 
 //Events
-require_once( 'library/event-functions.php' );
+//require_once( 'library/register-events.php' );
+
+//Events
+//require_once( 'library/event-functions.php' );
 
 ?>

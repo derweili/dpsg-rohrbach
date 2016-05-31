@@ -67,10 +67,10 @@ foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
  ?>
 	<div class="columns small-12 medium-4">
 		<a href="<?php the_permalink(); ?>" >
-			<?php the_post_thumbnail(); ?>
-	    	<?php the_title(); ?>
-	    </a>
-    </div>
+			<?php the_post_thumbnail( 'stufenpreview' ); ?>
+	    <?php the_title(); ?>
+    </a>
+  </div>
 <?php endforeach; 
 
 

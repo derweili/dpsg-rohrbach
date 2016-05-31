@@ -16,8 +16,8 @@
 
 get_header(); ?>
 
-<div id="page" class="row" role="main">
-	<article class="main-content columns small-12 medium-8">
+<div id="page" class="row" role="main" data-equalizer data-equalize-on="medium">
+	<article class="main-content columns small-12 medium-8" data-equalizer-watch>
 	<?php if ( have_posts() ) : ?>
 
 		<?php /* Start the Loop */ ?>

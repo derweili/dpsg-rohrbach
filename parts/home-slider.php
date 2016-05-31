@@ -12,7 +12,7 @@ $newssliderposts = get_posts( $args );
 
 if ($newssliderposts):
   ?>
-<div class="image-slider" role="region" aria-label="Favorite Space Pictures" data-orbit data-use-m-u-i="true" data-timer-delay="7500" data-bullets="true">
+<div class="image-slider columns small-12" role="region" aria-label="Favorite Space Pictures" data-orbit data-use-m-u-i="true" data-timer-delay="7500" data-bullets="true">
   <ul class="orbit-container">
 <?php
   $count = 1;

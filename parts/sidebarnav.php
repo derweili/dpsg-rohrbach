@@ -29,7 +29,7 @@ $args = array(
 $posts_array = get_posts( $args );
 
 //print_r($posts_array);
-echo '<ul class="menu vertical">';
+echo '<ul class="menu vertical sidebarnav">';
 foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
 <?php 
 //print_r($post);
