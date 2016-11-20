@@ -69,4 +69,6 @@ require_once( 'library/amp.php' );
 //Events
 //require_once( 'library/event-functions.php' );
 
+add_editor_style( 'assets/stylesheets/foundation.css' );
+
 ?>

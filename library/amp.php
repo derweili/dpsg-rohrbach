@@ -30,6 +30,14 @@ function xyz_amp_additional_css_styles( $amp_template ) {
         margin: 0 auto;
         text-indent: -9999px;
     }*/
+    
+    @media (max-width: 500px){
+        .amp-wp-article-content amp-img{
+            width:100%;
+            min-width:100%;
+        }
+    }
+
     <?php
 }
 
@@ -37,7 +45,7 @@ function xyz_amp_additional_css_styles( $amp_template ) {
 //Set AMP featured image
 add_action( 'pre_amp_render_post', 'xyz_amp_add_custom_actions' );
 function xyz_amp_add_custom_actions() {
-    add_filter( 'the_content', 'xyz_amp_add_featured_image', 1);
+   // add_filter( 'the_content', 'xyz_amp_add_featured_image', 1);
 }
 
 function xyz_amp_add_featured_image( $content ) {
@@ -58,3 +66,7 @@ function xyz_amp_remove_author_meta( $meta_parts ) {
     }
     return $meta_parts;
 }
+
+
+// Remove scripts  loaded by next GEN Gallery from AMP footer
+add_filter( 'run_ngg_resource_manager', '__return_false' );

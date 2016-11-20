@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive pages
+ * The template for displaying "bildergalerie" archive pages
  *
  * Used to display archive-type pages if nothing more specific matches a query.
  * For example, puts together date-based pages if no date.php file exists.
@@ -25,8 +25,11 @@ get_header(); ?>
 			<h1><?php single_cat_title() ?></h1>
 			<p><?php category_description() ?></p>
 		</div>
+		<div class="columns small-12 large-12">
+			<div class="row">
 		<?php /* Start the Loop */ 
 			$year = '';
+			$years = array();
 		?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<?php
@@ -34,7 +37,8 @@ get_header(); ?>
 
 				if ( $year != $currentyear ) {
 					$year = $currentyear;
-					echo '<div class="columns small-12 year-container"><h2 class="year">Bilder aus dem Jahr ' . $year . ':</h2></div>';
+					echo '<div class="columns small-12 year-container"><h2 class="year" id="year' . $year . '">Bilder aus dem Jahr ' . $year . ':</h2></div>';
+					$years[] = $year;
 				} else{
 					//echo '<div class="columns small-12"><h2>hallo</h2></div>';
 				}
@@ -52,6 +56,17 @@ get_header(); ?>
 				<!--<hr />-->
 			</div>
 		<?php endwhile; ?>
+			</div>
+
+		</div>
+			<!--<div class="columns large-2">
+				<p class="lead">Jahre</p>
+				<ul class="menu vertical">
+					<?php foreach ($years as $year): ?>
+						<li><a href="#year<?php echo $year; ?>"><?php echo $year; ?></a></li>
+					<?php endforeach ?>
+				</ul>
+			</div>-->
 
 		<?php else : ?>
 			<?php get_template_part( 'content', 'none' ); ?>
@@ -60,7 +75,7 @@ get_header(); ?>
 
 		<?php /* Display navigation to next/previous pages when applicable */ ?>
 		<?php if ( function_exists( 'foundationpress_pagination' ) ) { foundationpress_pagination(); } else if ( is_paged() ) { ?>
-			<nav id="post-nav">
+			<nav id="post-nav" class="columns small-12">
 				<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
 				<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
 			</nav>
