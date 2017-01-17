@@ -63,6 +63,8 @@ require_once( 'library/lazy-loading.php' );
 
 require_once( 'library/amp.php' );
 
+require_once( 'library/template-tags.php' );
+
 //Events
 //require_once( 'library/register-events.php' );
 

@@ -42,7 +42,7 @@ var PATHS = {
     'assets/components/foundation-sites/js/foundation.dropdownMenu.js',
     'assets/components/foundation-sites/js/foundation.equalizer.js',
     //'assets/components/foundation-sites/js/foundation.interchange.js',
-    //'assets/components/foundation-sites/js/foundation.magellan.js',
+    'assets/components/foundation-sites/js/foundation.magellan.js',
     'assets/components/foundation-sites/js/foundation.offcanvas.js',
     'assets/components/foundation-sites/js/foundation.orbit.js',
     'assets/components/foundation-sites/js/foundation.responsiveMenu.js',

@@ -18,13 +18,21 @@
 
 get_header(); ?>
 
-<div id="page" class="row main-content" role="main">
+<div id="page" class="row main-content" data-sticky-container role="main">
 	<!--<article class=" columns small-12">-->
 	<?php if ( have_posts() ) : ?>
-		<div class="columns small-12">
+		<div class="columns small-12 medium-6" id="headlinesection">
 			<h1><?php single_cat_title() ?></h1>
 			<p><?php category_description() ?></p>
 		</div>
+	
+		<nav class="medium-6 colummns text-right">
+			<strong class="year-label">Zum Jahr springen:</strong>
+			<ul class="horizontal menu magellannav float-right" data-magellan data-threshold="50">
+				<!-- This is the sticky nav container. Elements are added via bildergalerie-scrollnav.js -->
+			</ul>
+		</nav>
+
 		<div class="columns small-12 large-12">
 			<div class="row">
 		<?php /* Start the Loop */ 
@@ -37,7 +45,7 @@ get_header(); ?>
 
 				if ( $year != $currentyear ) {
 					$year = $currentyear;
-					echo '<div class="columns small-12 year-container"><h2 class="year" id="year' . $year . '">Bilder aus dem Jahr ' . $year . ':</h2></div>';
+					echo '<div class="columns small-12 year-container"><h2 class="year" id="year' . $year . '" data-magellan-target="year' . $year . '" data-year="' . $year . '" >Bilder aus dem Jahr ' . $year . ':</h2></div>';
 					$years[] = $year;
 				} else{
 					//echo '<div class="columns small-12"><h2>hallo</h2></div>';
@@ -59,15 +67,6 @@ get_header(); ?>
 			</div>
 
 		</div>
-			<!--<div class="columns large-2">
-				<p class="lead">Jahre</p>
-				<ul class="menu vertical">
-					<?php foreach ($years as $year): ?>
-						<li><a href="#year<?php echo $year; ?>"><?php echo $year; ?></a></li>
-					<?php endforeach ?>
-				</ul>
-			</div>-->
-
 		<?php else : ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 

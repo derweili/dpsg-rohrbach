@@ -1,4 +1,4 @@
-.category-bildergalerie{
+.archive{
 	.main-content h1{
 		margin-top: rem-calc(40);
 	}
@@ -31,5 +31,17 @@
 		&:hover h2{
 			text-decoration: underline;
 		}
+	}
+	nav.sticky{
+		right: 0;
+	}
+	.magellannav{
+		li{
+			display: inline-block;
+		}
+	}
+	.year-label{
+		display: block;
+		margin-right: rem-calc(20);
 	}
 }

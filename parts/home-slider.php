@@ -29,9 +29,9 @@ if ($newssliderposts):
     <li class="orbit-slide">
       <a href="<?php echo get_permalink(); ?>">
         <?php if ($sliderimage['ID']): ?>
-          <img src="<?php echo $sliderimage['sizes']['homeslider']; ?>" alt="<?php echo $sliderimage['alt']; ?>" title="<?php echo $sliderimage['title']; ?>">
+          <img src="<?php echo $sliderimage['sizes']['homeslider']; ?>" alt="<?php echo $sliderimage['alt']; ?>" title="<?php echo $sliderimage['title']; ?>" data-crazy-lazy="exclude">
         <?php else: ?>
-          <?php the_post_thumbnail( 'homeslider' ); ?>
+          <?php the_post_thumbnail( 'homeslider',  array( 'data-crazy-lazy' => 'exclude' ) ); ?>
         <?php endif; ?>
         <hgroup>
           <h2 class="headline01 hide-for-small-only"><?php the_field('text_1'); ?></h2>
