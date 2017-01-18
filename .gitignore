@@ -3,7 +3,6 @@
 *.log
 node_modules/
 assets/components/
-assets/fonts/
 assets/javascript/vendor/
 assets/javascript/custom/demosite.js
 packaged/
