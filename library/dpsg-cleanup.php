@@ -12,12 +12,12 @@ function remove_cssjs_ver( $src ) {
 
     return $src;
 }
-add_filter( 'style_loader_src', 'remove_cssjs_ver', 10, 2 );
-add_filter( 'script_loader_src', 'remove_cssjs_ver', 10, 2 );
+// add_filter( 'style_loader_src', 'remove_cssjs_ver', 10, 2 );
+// add_filter( 'script_loader_src', 'remove_cssjs_ver', 10, 2 );
 
 /**
 Remove WP-Embed
 */
 function block_wp_embed() {
     wp_deregister_script('wp-embed'); }
-add_action('init', 'block_wp_embed');
+// add_action('init', 'block_wp_embed');

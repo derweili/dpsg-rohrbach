@@ -1,33 +1,37 @@
 jQuery( document ).ready(function() {
-  
+
   var yearHeadlines = jQuery( ".category-bildergalerie h2.year"); // get all Year Headlines
-  var yearNavContainer = jQuery( ".magellannav" ); // get nav container
-  var stickyNav = jQuery( ".stickynav" ); // get nav container
+  var yearNavContainer = jQuery( ".year-nav" ),
+      years = []; // get nav container
 
 
 	// loop through all years
-	var magellanLoop = jQuery(yearHeadlines).each(function(){
+	jQuery(yearHeadlines).each(function(){
 
-		var magellanTarget = jQuery( this ).attr("data-magellan-target"); // get magellan id from year element
-		var itemYear = jQuery( this ).attr("data-year"); // get year from element
+    var year = jQuery(this).attr('data-year');
 
+    years.push(year);
 		// add new nav item to container
-		jQuery( yearNavContainer ).append( "<li><a href='#" + magellanTarget + "'>" + itemYear + "</a></li>");
+		jQuery( yearNavContainer ).append( "<li><a class='yearscrolllink' href='#year" + year + "'>" + year + "</a></li>");
 
 	});
 
+  var scrollLinks = jQuery('.yearscrolllink');
 
- 	// callback function when all items are added
- 	var loadSlider = function(){
-  		// init magellan nav
-  		var newMagellanNav = new Foundation.Magellan(yearNavContainer);
-		var newSticky = new Foundation.Sticky(stickyNav);
+  jQuery(scrollLinks).on('click', function(e){
+      e.preventDefault();
+      console.log(e);
+       var target = this.hash;
+       var $target = jQuery(target);
 
-  	};
+       var myOff =  $target.offset().top -50;
 
-	// load callback function when each loop has finished
-	jQuery.when(magellanLoop)
-		.then(  loadSlider, loadSlider );
+       jQuery('html, body').stop().animate({
+           'scrollTop': myOff
+       }, 900, 'swing', function () {
+
+     });
+  });
 
 
 });

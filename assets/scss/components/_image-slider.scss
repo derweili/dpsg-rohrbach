@@ -1,12 +1,32 @@
-.image-slider ul{
+.slider-container{
 	@include box-shadow($dpsg-shadow);
 	border: 10px solid #fff;
+	margin-bottom: rem-calc(30);
+}
+
+.image-slider{
+	margin-bottom: 0!important;
+
+	// hide all slides except first slide to prevent flickering
+  &.un-initialized{
+    .slide:not(:first-child){
+      display: none;
+    }
+  }
+
+	.slide{
+		position: relative;
+	}
 	img{
-		width: 100%
+		display: inline;
+		width: 100%;
+		z-index: 1;
+		position: relative;
 	}
 
 	//Slider Description
 	hgroup{
+		// display: none;
 		position: absolute;
 	    z-index: 2;
 	    bottom: 0;
@@ -33,19 +53,19 @@
 	}
 
 }
-
-.image-slider{
-	.orbit-bullets{
-		button{
-			margin: rem-calc(4 28);
-			color: $primary-color;
-			&.is-active{
-				color: $red;
-			}
-			&:hover{
-				text-decoration: underline;
-			}
-		}
-
-	}
-}
+//
+// .image-slider{
+// 	.orbit-bullets{
+// 		button{
+// 			margin: rem-calc(4 28);
+// 			color: $primary-color;
+// 			&.is-active{
+// 				color: $red;
+// 			}
+// 			&:hover{
+// 				text-decoration: underline;
+// 			}
+// 		}
+//
+// 	}
+// }

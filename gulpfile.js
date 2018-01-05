@@ -13,7 +13,7 @@ var del         = require('del');
 
 // Enter URL of your local server here
 // Example: 'http://localwebsite.dev'
-var URL = 'http://pfadiwebsite/';
+var URL = 'http://dpsg/';
 
 // Check for --production flag
 var isProduction = !!(argv.production);
@@ -29,6 +29,9 @@ var PATHS = {
     'assets/components/fontawesome/scss'
   ],
   javascript: [
+
+    'assets/components/slick-carousel/slick/slick.js', // slick carousel slider
+
     'assets/components/what-input/what-input.js',
     'assets/components/foundation-sites/js/foundation.core.js',
     'assets/components/foundation-sites/js/foundation.util.*.js',
