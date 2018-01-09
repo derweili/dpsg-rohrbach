@@ -12,7 +12,7 @@ if($posts):
     <div class="columns small-12">
       <div class="row archive" id="frontPageNews">
         <div class="columns small-12">
-          <h2>Das neuste aus der Bildergalerie</h2>
+          <h2>Das Neuste aus der Bildergalerie</h2>
 
         </div>
         <?php foreach ($posts as $post): setup_postdata($post); ?>
