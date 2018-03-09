@@ -23,7 +23,6 @@ get_template_part( 'parts/feature-boxes' );
 
 get_template_part( 'parts/home-news' );
 
-get_template_part( 'parts/home-boxes' );
 
 
 
