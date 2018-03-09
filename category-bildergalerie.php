@@ -26,12 +26,7 @@ get_header(); ?>
 			<p><?php category_description() ?></p>
 		</div>
 
-		<nav class="medium-6 colummns">
-			<strong class="year-label">Zum Jahr springen:</strong>
-			<ul class="horizontal menu float-right year-nav">
-				<!-- This is the sticky nav container. Elements are added via bildergalerie-scrollnav.js -->
-			</ul>
-		</nav>
+
 
 		<div class="columns small-12 large-12">
 			<div class="row">

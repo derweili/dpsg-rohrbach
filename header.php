@@ -31,34 +31,22 @@
 		<?php get_template_part( 'parts/mobile-off-canvas' ); ?>
 	<?php endif; ?>
 
-	<?php do_action( 'foundationpress_layout_start' ); ?>
+	<?php // do_action( 'foundationpress_layout_start' ); ?>
 
-	<header id="masthead" class="site-header" role="banner">
-		<div class="title-bar" data-responsive-toggle="site-navigation">
-			<button class="menu-icon" type="button" data-toggle="offCanvas"></button>
-			<div class="title-bar-title">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+	<div class="header-navigation">
+		<div class="row">
+			<div class="columns small-12">
+				<div class="top-bar">
+					<div class="top-bar-left">
+						
+						<?php foundationpress_top_bar_r(); ?>
+					</div>
+					<div class="top-bar-right">
+					</div>
+				</div>
 			</div>
 		</div>
-
-		<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
-			<div class="row">
-				<div class="columns">
-					<div class="top-bar-left">
-						<ul class="menu">
-							<li class="home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icon-dpsg-nav.png" alt="DPSG Navigations Icon" height="26" width="26"></a></li>
-						</ul>
-					</div>
-					<div class="top-bar-left">
-						<?php foundationpress_top_bar_r(); ?>
-
-						<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) == 'topbar' ) : ?>
-							<?php get_template_part( 'parts/mobile-top-bar' ); ?>
-						<?php endif; ?>
-					</div>
-			</div>
-		</nav>
-	</header>
+	</div>
 
 	<section class="container">
 		<?php do_action( 'foundationpress_after_header' ); ?>

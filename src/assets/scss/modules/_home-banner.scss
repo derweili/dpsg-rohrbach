@@ -1,0 +1,44 @@
+.home-banner{
+  background-image: url('../img/home-header.jpg');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  &:after{
+    background-color: $primary-color;
+    opacity: 0.48;
+    display: block;
+    content: ' ';
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+  }
+  > .row{
+    height: calc(100vh - 80px);
+    min-height: rem-calc(490);
+    position: relative;
+    z-index: 2;
+  }
+
+  .text-container{
+    margin: rem-calc(40);
+    .button + .button{
+      margin-left: rem-calc(20px);
+    }
+  }
+
+  h1{
+    color: $white;
+    font-size: rem-calc(48);
+    margin-bottom: rem-calc(35);
+    .small{
+      font-weight: normal;
+    }
+  }
+
+  .button.hollow{
+    color: $white;
+    border-color: $white;
+  }
+}

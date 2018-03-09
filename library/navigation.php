@@ -24,9 +24,9 @@ if ( ! function_exists( 'foundationpress_top_bar_r' ) ) {
 		wp_nav_menu( array(
 			'container'      => false,
 			'menu_class'     => 'dropdown menu',
-			'items_wrap'     => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>',
+			'items_wrap'     => '<ul id="%1$s" class="%2$s" data-dropdown-menu> <li><a href="' . esc_url( home_url( '/' ) ) . '"><img src="' . get_stylesheet_directory_uri() . '/dist/assets/img/menu-logo@2x.png" alt=""></a></li>%3$s</ul>',
 			'theme_location' => 'top-bar-r',
-			'depth'          => 3,
+			'depth'          => 1,
 			'fallback_cb'    => false,
 			'walker'         => new Foundationpress_Top_Bar_Walker(),
 		));

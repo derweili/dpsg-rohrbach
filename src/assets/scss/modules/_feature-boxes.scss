@@ -1,0 +1,49 @@
+.feature-boxes{
+  .box{
+    position: relative;
+    img{
+      position: relative;
+      z-index: 1;
+    }
+    .caption{
+      z-index: 3;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 100%;
+      color: $white;
+      text-align: center;
+    }
+    &:after{
+      position: absolute;
+      z-index: 2;
+      display: block;
+      content: ' ';
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      opacity: 0.7;
+    }
+  }
+
+  h4{
+    font-size: rem-calc(30);
+    color: $white;
+    margin-bottom: 0;
+  }
+  .teaser{
+    font-family: $serif-font;
+  }
+  .morelink{
+    display: block;
+    margin-top: 10px;
+    color: $white;
+  }
+
+  .woelflinge::after{background-color: $woelflinge;}
+  .jungpfadfinder::after{background-color: $jungpfadfinder;}
+  .pfadfinder::after{background-color: $pfadfinder;}
+  .rover::after{background-color: $rover;}
+}

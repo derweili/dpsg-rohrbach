@@ -1,0 +1,104 @@
+// @font-face {
+//     font-family: "Veniceserf";
+//     font-style: normal;
+//     font-weight: normal;
+//     src: url("../fonts/Veniceserf_4_.eot") format("eot"), url("../fonts/Veniceserf_4_.woff") format("woff");
+// }
+// @font-face {
+//     font-family: "Veniceserf";
+//     font-style: italic;
+//     font-weight: normal;
+//     src: url("../fonts/Veniceserf_4i.eot") format("eot"), url("../fonts/Veniceserf_4i.woff") format("woff");
+// }
+// @font-face {
+//     font-family: "Veniceserf";
+//     font-style: normal;
+//     font-weight: bold;
+//     src: url("../fonts/Veniceserf_7_.eot") format("eot"), url("../fonts/Veniceserf_7_.woff") format("woff");
+// }
+// @font-face {
+//     font-family: "Veniceserf";
+//     font-style: italic;
+//     font-weight: bold;
+//     src: url("../fonts/Veniceserf_7i.eot") format("eot"), url("../fonts/Veniceserf_7i.woff") format("woff");
+// }
+h1, h2, h3, h4, h4, h5, h6{
+	    font-family: "Roboto Slab",​serif;
+}
+
+
+
+
+
+
+.post-title{
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+}
+
+.post-title + time{
+    margin-bottom: 0.5em;
+    display: block;
+}
+
+.more-link{
+    @include button-expand();
+}
+
+.blogpost-entry > a{
+    color: inherit;
+}
+
+.blogpost-entry{
+    margin-bottom: rem-calc(40);
+}
+.page, .single-post{
+    .main-content a {
+        color: #b5142b;
+        text-decoration: underline;
+    }
+}
+
+
+
+//Blockquote
+blockquote{
+    margin: 8px 0;
+    background: #fff;
+    border-bottom: 1px solid #ccd6dd;
+    border-right: 1px solid #e5eaee;
+    padding: 10px;
+    font-family: 'Veniceserf', serif;
+    border: 0;
+    margin: 0.5em 0 1em 0;
+    font-style: italic;
+    padding: 1em 1em 0.5em 4em;
+    color: $primary-color;
+    position: relative;
+    font-size: 1.1em;
+    p{
+        color: $primary-color;
+    }
+    &:before {
+        content: "„";
+        font-size: 8em;
+        line-height: 0%;
+        position: absolute;
+        top: -0.1em;
+        left: 0.1em;
+        color: #99acbb;
+    }
+    .cite{
+        display: block;
+        margin: 0.7em 0 0.2em;
+        &:before{
+            content: "—";
+        }
+    }
+}
+
+//Code Blocks
+pre {
+    background: white;
+    padding: rem-calc(10);
+}

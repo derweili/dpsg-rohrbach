@@ -32,10 +32,15 @@ function dpsg_rohrbach_metaheader() {
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dpsg.svg" title="DPSG Sinsheim Rohrbach - Startseite" alt="DPSG Logo" id="headerlogo" width="363" height="144"/>
 			</a>
 		</div>
-		<div class="columns align-right">
+		<div class="columns align-self-middle align-center">
+			<?php get_search_form( true ); ?>
+		</div>
+		<div class="columns align-right shrink">
 			<?php dpsg_rohrbach_meta_nav(); ?>
-			<p style="float:right; clear: both;">
-				<?php echo get_bloginfo( 'description' ) ?>
+			<p style="" class="text-right float-right">
+				Pfadfinderstamm Dom Helder Camara<br>
+				Sinsheim – Rohrbach
+				<?php //echo get_bloginfo( 'description' ) ?>
 			</p>
 		</div>
 	</div>

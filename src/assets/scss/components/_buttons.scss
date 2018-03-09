@@ -1,0 +1,10 @@
+.button{
+  text-transform: uppercase;
+}
+
+
+.button.hollow{
+  &:hover{
+    background-color: rgba(0,0,0,0.15);
+  }
+}

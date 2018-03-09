@@ -1,0 +1,32 @@
+#headerlogo{
+	max-width: rem-calc(156);
+	margin-top: rem-calc(18);
+	margin-bottom: rem-calc(18);
+}
+
+//Metanavigation
+.metanav{
+	margin-bottom: rem-calc(20);
+	display: block;
+	overflow: hidden;
+
+	a{
+		color: $white;
+		background-color: #4c6e88;
+		font-size: rem-calc(14);
+		line-height: rem-calc(20)!important;
+		font-weight: normal;
+		padding: rem-calc(4px 12px)!important;
+		margin-left: rem-calc(6);
+		&:hover{
+			@include box-shadow(3px 3px 0px #ccd6dd);
+			background-color: #003056;
+		}
+	}
+}
+
+.headersection{
+	p{
+		font-size: rem-calc(16)!important;
+	}
+}
