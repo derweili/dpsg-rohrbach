@@ -12,10 +12,10 @@
 	  <# } #>
 		<div class="suggestion-post-attributes">
 		  <span class="suggestion-post-title">{{{ data._highlightResult.post_title.value }}}</span>
-      <# console.log(data); if ( data._highlightResult.post_date_formatted ) { #>
+      <# console.log(data.post_date_formatted); if ( data.post_date_formatted ) { #>
         test
         <span class="suggestion-post-date">
-          {{{ data._highlightResult.post_date_formatted.value }}}
+          {{{ data.post_date_formatted }}}
         </span>
       <# } #>
 		  <# if ( data._snippetResult['content'] ) { #>
