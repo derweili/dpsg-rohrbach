@@ -12,8 +12,7 @@
 	  <# } #>
 		<div class="suggestion-post-attributes">
 		  <span class="suggestion-post-title">{{{ data._highlightResult.post_title.value }}}</span>
-      <# console.log(data.post_date_formatted); if ( data.post_date_formatted ) { #>
-        test
+      <# if ( data.post_date_formatted && data.post_type =='post' ) { #>
         <span class="suggestion-post-date">
           {{{ data.post_date_formatted }}}
         </span>
