@@ -40,6 +40,9 @@
     display: block;
     margin-top: 10px;
     color: $white;
+    &:hover{
+      text-decoration: underline;
+    }
   }
 
   .woelflinge::after{background-color: $woelflinge;}
