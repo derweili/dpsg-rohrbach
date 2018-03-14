@@ -39,7 +39,7 @@
 
 						<?php foundationpress_top_bar_r(); ?>
 					</div>
-					<div class="top-bar-right">
+					<div class="top-bar-right show-for-medium">
 						<?php get_search_form( true ); ?>
 					</div>
 				</div>

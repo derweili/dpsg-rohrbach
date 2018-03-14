@@ -25,10 +25,13 @@ get_header(); ?>
 			<h1><?php single_cat_title() ?></h1>
 			<p><?php category_description() ?></p>
 
+			<div class="hide-for-medium">
+				<?php get_search_form( true ); ?>
+			</div>
 
 		</div>
 
-    <div class="columns small-12 medium-10 medium-offset-1">
+    <div class="columns small-12 medium-10 medium-offset-1 show-for-medium">
       <?php get_template_part('parts/categorynav'); ?>
     </div>
 
