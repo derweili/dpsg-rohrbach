@@ -32,6 +32,9 @@
     color: $white;
     font-size: rem-calc(48);
     margin-bottom: rem-calc(35);
+    @include breakpoint(medium){
+      font-size: rem-calc(32);
+    }
     .small{
       font-weight: normal;
     }
