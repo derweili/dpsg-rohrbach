@@ -23,8 +23,18 @@
 
   .text-container{
     margin: rem-calc(40);
+
+    .button{
+      @include breakpoint(small only){
+        width: 100%
+      }
+    }
+
     .button + .button{
-      margin-left: rem-calc(20px);
+
+      @include breakpoint(medium){
+        margin-left: rem-calc(20px);
+      }
     }
   }
 
