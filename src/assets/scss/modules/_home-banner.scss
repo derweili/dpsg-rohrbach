@@ -30,10 +30,10 @@
 
   h1{
     color: $white;
-    font-size: rem-calc(48);
+    font-size: rem-calc(32);
     margin-bottom: rem-calc(35);
     @include breakpoint(medium){
-      font-size: rem-calc(32);
+      font-size: rem-calc(48);
     }
     .small{
       font-weight: normal;
