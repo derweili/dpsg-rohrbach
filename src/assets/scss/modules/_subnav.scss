@@ -1,0 +1,15 @@
+.subnav{
+  justify-content: center;
+  display: flex;
+  ul li {
+    font-weight: bold;
+    a{
+      background-color: transparent
+    }
+    &.active a{
+      background-color: transparent;
+      color: $primary-color;
+      opacity: 0.8;
+    }
+  }
+}

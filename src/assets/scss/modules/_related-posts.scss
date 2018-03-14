@@ -1,0 +1,32 @@
+.crp_related{
+  margin-top: rem-calc(80);
+  ul{
+    list-style: none;
+    left: 0;
+    @extend .row;
+    li{
+      @extend .columns;
+      @extend .small-12;
+      @extend .medium-4;
+      text-align: center;
+      margin-bottom: rem-calc(40);
+      font-size: rem-calc(18);
+      text-decoration: none;
+      a{
+        text-decoration: none!important;
+        &:hover{
+          text-decoration: underline!important;
+          color: $primary-color
+        }
+      }
+      a .crp_title{
+        color: $primary-color;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      img{
+        margin-bottom: rem-calc(15);
+      }
+    }
+  }
+}

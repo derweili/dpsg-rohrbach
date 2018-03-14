@@ -8,7 +8,7 @@
       <span class="teaser">
         7 – 10 Jahre
       </span><br>
-      <a href="" class="morelink">
+      <a href="/stufen/woelflinge/" class="morelink">
         Mehr erfahren
       </a>
     </div>
@@ -22,7 +22,7 @@
       <span class="teaser">
         10 – 13 Jahre
       </span><br>
-      <a href="" class="morelink">
+      <a href="/stufen/jungpfadfinder/" class="morelink">
         Mehr erfahren
       </a>
     </div>
@@ -37,7 +37,7 @@
       <span class="teaser">
         13 – 16 Jahre
       </span><br>
-      <a href="" class="morelink">
+      <a href="/stufen/pfadfinder/" class="morelink">
         Mehr erfahren
       </a>
     </div>
@@ -52,7 +52,7 @@
       <span class="teaser">
         16 – 21 Jahre
       </span><br>
-      <a href="" class="morelink">
+      <a href="/stufen/rover/" class="morelink">
         Mehr erfahren
       </a>
     </div>

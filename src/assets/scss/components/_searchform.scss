@@ -1,0 +1,53 @@
+#searchform{
+  position: relative;
+  input[type="search"]{
+    height: rem-calc(48);
+    border-radius: 4px;
+    font-size: rem-calc(18);
+    margin-bottom: 0;
+    @include breakpoint(medium){
+      max-width: rem-calc(350);
+      width: rem-calc(533);
+      padding-left: rem-calc(40);
+
+    }
+  }
+  input[type="submit"]{
+    width: rem-calc(17);
+    height: rem-calc(17);
+    font-size: 0;
+    padding: 0;
+    background-color: transparent;
+    background-image: url('../img/icons/search.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 14px;
+  }
+}
+
+//Algolia Search
+// .suggestion-link{
+//   background-color: green;
+//   &:focus, &:active, &:selected{
+//     background-color: red;
+//   }
+// }
+&:focus, &:active, &:selected, .active, .is-active{
+  background-color: red !important;
+}
+.aa-dropdown-menu .aa-suggestion.aa-cursor {
+  background-color: $secondary-color  !important;
+  *{
+    color: $white!important;
+  }
+}
+.algolia-powered-by-link svg{
+  width: 80px;
+}
+.autocomplete:selected{
+  background-color: green;
+  border: red;
+}

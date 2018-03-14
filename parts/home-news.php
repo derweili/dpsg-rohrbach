@@ -4,6 +4,10 @@ $args = array(
   'posts_per_page' => 6,
 );
 
+$category_ids = get_post_meta( get_the_ID(), 'dpsg_rohrbach_news_category_id', true );
+
+if ( $category_ids ) $args['tax_query'] = [['taxonomy' => 'category', 'field' => 'term_id', 'terms' => $category_ids]];
+
 $posts = get_posts($args);
 
 if($posts):
@@ -12,7 +16,12 @@ if($posts):
     <div class="columns small-12">
       <div class="row archive" id="frontPageNews">
         <div class="columns small-12">
-          <h2>Das Neuste aus der Bildergalerie</h2>
+          <?php if ($category_ids = get_post_meta( get_the_ID(), 'dpsg_rohrbach_news_title', true ) ): ?>
+            <h2><?php echo $category_ids ?>:</h2>
+          <?php else: ?>
+            <h2>Das Neuste aus unserer Bildergalerie:</h2>
+          <?php endif; ?>
+
 
         </div>
         <?php foreach ($posts as $post): setup_postdata($post); ?>

@@ -39,7 +39,7 @@
 //  34. Tooltip
 //  35. Top Bar
 
-@import '../../components/foundation-sites/scss/util/util';
+@import 'util/util';
 
 // 1. Global
 // ---------
@@ -49,18 +49,18 @@ $serif-font: 'Roboto Slab';
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
-$primary-color: #003056;
+// $primary-color: #003056;
 $red: #b5152b;
-$secondary-color: #4c6e88;
-$success-color: #3adb76;
-$warning-color: #ffae00;
-$alert-color: #ec5840;
+// $secondary-color: #4c6e88;
+// $success-color: #3adb76;
+// $warning-color: #ffae00;
+// $alert-color: #ec5840;
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
-$body-background: #f0f4f6;
+$body-background: $white;
 $body-font-color: $black;
 $body-font-family: 'Roboto', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
@@ -83,6 +83,10 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #cc4b37,
 );
+
+
+@include add-foundation-colors;
+
 
 // 2. Breakpoints
 // --------------
@@ -126,7 +130,7 @@ $header-sizes: (
     'h6': 16,
   ),
   medium: (
-    'h1': 32,
+    'h1': 48,
     'h2': 28,
     'h3': 20,
     'h4': 18,
@@ -235,7 +239,9 @@ $accordionmenu-arrow-color: $primary-color;
 // --------
 
 $badge-background: $primary-color;
-$badge-color: foreground($badge-background);
+$badge-color: $white;
+$badge-color-alt: $black;
+$badge-palette: $foundation-palette;
 $badge-padding: 0.3em;
 $badge-minwidth: 2.1em;
 $badge-font-size: 0.6rem;
@@ -331,9 +337,10 @@ $dropdown-sizes: (
 $dropdownmenu-arrows: true;
 $dropdownmenu-arrow-color: $anchor-color;
 $dropdownmenu-min-width: 200px;
-$dropdownmenu-background: $white;
+$dropdownmenu-background: $primary-color;
 $dropdownmenu-border: 1px solid $medium-gray;
-
+$dropdownmenu-submenu-background: $primary-color;
+$dropdown-menu-item-background-active: $primary-color;
 // 18. Flex Video
 // --------------
 
@@ -382,7 +389,7 @@ $input-radius: $global-radius;
 // ---------
 
 $label-background: $primary-color;
-$label-color: foreground($label-background);
+$label-color: $white;
 $label-font-size: 0.8rem;
 $label-padding: 0.33333rem 0.5rem;
 $label-radius: $global-radius;

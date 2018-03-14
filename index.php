@@ -27,7 +27,7 @@ get_header(); ?>
 		</div>
 		<div class="columns small-12 large-12">
 			<div class="row">
-		<?php /* Start the Loop */ 
+		<?php /* Start the Loop */
 			$year = '';
 			$years = array();
 		?>

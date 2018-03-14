@@ -7,8 +7,8 @@
           DPSG Stamm Dom Helder Camara
         </span>
       </h1>
-      <a href="/category/bildergalerie/"class="button hollow">Zur Bildergalerie</a>
-      <a class="button">Mitglied werden</a>
+      <a href="/uber-uns/" class="button hollow">Über uns</a>
+      <a href="/category/bildergalerie/" class="button">Zur Bildergalerie</a>
     </div>
 
   </div>

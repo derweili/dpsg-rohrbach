@@ -5,10 +5,10 @@
 	//border-top: 1px solid #ccc;
 	margin-top: rem-calc(60);
 	height: 329px;
-	background: url('../images/bgFooterRasen.png') bottom repeat-x;
+	background: url('../img/bgFooterRasen.png') bottom repeat-x;
 
 	#footer {
-		background: url("../images/bgFooter.png") 510px 40px no-repeat;
+		background: url("../img/bgFooter.png") 510px 40px no-repeat;
 		height: 328px;
 		@include grid-row();
 		padding: rem-calc(30) 0;

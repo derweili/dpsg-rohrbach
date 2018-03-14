@@ -36,8 +36,8 @@
 @include foundation-badge;
 @include foundation-breadcrumbs;
 @include foundation-button-group;
-@include foundation-callout;
-@include foundation-card;
+// @include foundation-callout;
+// @include foundation-card;
 @include foundation-close-button;
 @include foundation-menu;
 @include foundation-menu-icon;
@@ -78,7 +78,7 @@
 @import "global/mixins";
 @import "global/typo";
 
-@import "../components/slick-carousel/slick/slick.scss";
+//@import "../components/slick-carousel/slick/slick.scss";
 // @import "../components/slick-carousel/slick/slick-theme.scss";
 
 // Modules
@@ -88,6 +88,9 @@
 @import "modules/header";
 @import "modules/home-banner";
 @import "modules/feature-boxes";
+@import "modules/subnav";
+@import "modules/categorynav";
+@import "modules/related-posts";
 
 // Components
 @import "components/buttons";
@@ -97,6 +100,7 @@
 @import "components/image-slider";
 @import "components/pagination";
 @import "components/homeslider";
+@import "components/searchform";
 
 // Templates
 @import "templates/front";
@@ -107,3 +111,5 @@
 @import "templates/single-post";
 @import "templates/category-bildergalerie";
 @import "templates/stufen";
+@import "templates/about-us";
+@import "templates/archive";

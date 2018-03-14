@@ -1,0 +1,18 @@
+.categorynav.menu{
+  margin-top: rem-calc(20);
+  margin-bottom: rem-calc(40);
+  a{
+    color: #606060;
+    border: 2px solid #606060;
+    border-radius: rem-calc(4);
+    font-size: rem-calc(24);
+    margin-left: rem-calc(10);
+    margin-right: rem-calc(10);
+    margin-bottom: rem-calc(10);
+  }
+  .active a, a:hover{
+    background-color: transparent;
+    border-color: $primary-color;
+    color: $primary-color;
+  }
+}

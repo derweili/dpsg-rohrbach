@@ -65,6 +65,8 @@ require_once( 'library/amp.php' );
 
 require_once( 'library/template-tags.php' );
 
+require_once( 'library/register-algolia-template.php' );
+
 //Events
 //require_once( 'library/register-events.php' );
 

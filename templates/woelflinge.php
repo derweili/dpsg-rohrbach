@@ -4,6 +4,7 @@ Template Name: Woelflinge
 */
 get_header(); ?>
 
+<?php while ( have_posts() ) : the_post(); ?>
 
 <section class="home-banner">
   <div class="row align-center align-middle">
@@ -22,21 +23,18 @@ get_header(); ?>
 </section>
 
 
-<div class="row">
+<div class="row align-middle">
   <div class="columns small-12 medium-4">
     <img src="<?php echo get_stylesheet_directory_uri() ?>/dist/assets/img/woelfi@2x.png" alt="">
   </div>
-  <div class="columns">
-    <p>Im Alter von sieben Jahren können Jungen und Mädchen Mitglied der Wölflingsstufe und damit der DPSG werden. In der Kinderstufe stehen die Wölflinge am Anfang einer Entdeckungsreise, in der sie bis zum 10. Lebensjahr vieles lernen, ausprobieren und erleben können.
-</p>
-    <p>Die Wölflinge treffen sich jeden Freitag von 17:00 Uhr bis 18:30 Uhr im Gruppenraum unter der Kapelle in Rohrbach. </p>
-    <p>
-      <a href="#" class="button hollow">Nachricht an die Leiter schicken</a>
-    </p>
+  <div class="columns small-12 medium-6 medium-offset-1">
+    <?php the_content(); ?>
   </div>
 
 
 </div>
+
+<?php endwhile; ?>
 
 <?php get_template_part( 'parts/home-news' ); ?>
 

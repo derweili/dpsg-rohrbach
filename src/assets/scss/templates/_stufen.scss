@@ -1,10 +1,71 @@
 .page-template-woelflinge{
   .home-banner{
-
+    background-image: url('../img/woelflinge.jpg');
   }
 }
-.page-template-woelflinge{
+.page-template-jungpfadfinder{
   .home-banner{
-    background-image: url('../img/wolflinge.jpg');
+    background-image: url('../img/jupfis-header.jpg');
   }
+}
+.page-template-pfadfinder{
+  .home-banner{
+    background-image: url('../img/pfadis-header.jpg');
+  }
+}
+.page-template-rover{
+  .home-banner{
+    background-image: url('../img/rover-header.jpg');
+  }
+}
+.page-template-about-us{
+  .home-banner{
+    background-image: url('../img/stamm-foto.jpg');
+  }
+}
+.page-template-woelflinge, .page-template-jungpfadfinder, .page-template-pfadfinder, .page-template-rover, .page-template-about-us, .single-post{
+  .home-banner{
+    margin-bottom: rem-calc(-140);
+    z-index: 1;
+    position: relative;
+    &:after{
+      background-color: rgba(255,255,255,0.65);
+      background-image: linear-gradient(rgba(255,255,255,0), #fff);
+      background-size: contain;
+      opacity: 1;
+    }
+
+    h1{
+      color: $primary-color
+    }
+
+
+  }
+
+  .home-banner + * {
+    position: relative;
+    z-index: 2
+  }
+
+  #frontPageNews{
+    margin-top: rem-calc(80);
+  }
+
+  .subnav{
+    // margin-bottom: rem-calc(-38px);
+    z-index: 10;
+    position: relative;
+    // background-color: rgba(255,255,255,0.5);
+    box-shadow: 0 0px 10px rgba(20,36,50,0.06);
+  }
+
+}
+
+
+
+
+// stufen overview
+.page-template .main-content{
+  margin-top: rem-calc(40);
+  margin-bottom: rem-calc(120);
 }

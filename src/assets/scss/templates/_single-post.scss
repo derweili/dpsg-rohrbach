@@ -1,18 +1,17 @@
-#single-post {
-  @include grid-row();
-  margin-top: 3rem;
-
-  .main-content {
-    @include breakpoint(small) {
-      @include grid-column(12);
-    }
-
-    @include breakpoint(medium) {
-      @include grid-column(8);
-    }
-  }
-
-}
+// .single-post .content-section {
+//   @include grid-row();
+//   justify-content: center;
+//   .inner {
+//     @include breakpoint(small) {
+//       @include grid-column(12);
+//     }
+//
+//     @include breakpoint(medium) {
+//       @include grid-column(6);
+//     }
+//   }
+//
+// }
 
 
 .post-title{

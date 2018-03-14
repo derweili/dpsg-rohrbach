@@ -26,7 +26,7 @@ if ( ! function_exists( 'foundationpress_top_bar_r' ) ) {
 			'menu_class'     => 'dropdown menu',
 			'items_wrap'     => '<ul id="%1$s" class="%2$s" data-dropdown-menu> <li><a href="' . esc_url( home_url( '/' ) ) . '"><img src="' . get_stylesheet_directory_uri() . '/dist/assets/img/menu-logo@2x.png" alt=""></a></li>%3$s</ul>',
 			'theme_location' => 'top-bar-r',
-			'depth'          => 1,
+			'depth'          => 2,
 			'fallback_cb'    => false,
 			'walker'         => new Foundationpress_Top_Bar_Walker(),
 		));

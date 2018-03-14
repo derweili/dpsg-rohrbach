@@ -8,38 +8,55 @@
  */
 
 get_header(); ?>
-
-<div class="row">
-	<div class="small-12 large-8 columns" role="main">
-
-		<?php do_action( 'foundationpress_before_content' ); ?>
-
-		<h2><?php _e( 'Search Results for', 'foundationpress' ); ?> "<?php echo get_search_query(); ?>"</h2>
-
+<div id="page" class="row main-content" data-sticky-container role="main">
+	<!--<article class=" columns small-12">-->
 	<?php if ( have_posts() ) : ?>
+		<div class="columns small-12  text-center" id="headlinesection">
+			<h1><span class="light">Suchergebnisse zu: </span><?php echo get_search_query(); ?></h1>
+			<p><?php category_description() ?></p>
+		</div>
 
-		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'content', get_post_format() ); ?>
-		<?php endwhile; ?>
 
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
+				<div class="columns small-12 large-12">
+					<div class="row">
+				<?php /* Start the Loop */
+					$year = '';
+					$years = array();
+				?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-	<?php endif;?>
+					<div id="post-<?php the_ID(); ?>" <?php post_class('columns small-6 medium-4'); ?>>
+						<header>
+							<a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail('galleryfeature'); ?></a>
+							<h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+							<?php //foundationpress_entry_meta(); ?>
+						</header>
+						<?php /*<div class="entry-content">
+							<?php the_excerpt(); ?>
+							<a href="<?php echo get_permalink(); ?>" class="button">Weiterlesen</a>
+						</div>*/ ?>
+						<!--<hr />-->
+					</div>
+				<?php endwhile; ?>
+					</div>
 
-	<?php do_action( 'foundationpress_before_pagination' ); ?>
+				</div>
+				<?php else : ?>
+					<?php get_template_part( 'content', 'none' ); ?>
 
-	<?php if ( function_exists( 'foundationpress_pagination' ) ) { foundationpress_pagination(); } else if ( is_paged() ) { ?>
+				<?php endif; // End have_posts() check. ?>
 
-		<nav id="post-nav">
-			<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
-			<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
-		</nav>
-	<?php } ?>
+				<?php /* Display navigation to next/previous pages when applicable */ ?>
+				<?php if ( function_exists( 'foundationpress_pagination' ) ) { foundationpress_pagination(); } else if ( is_paged() ) { ?>
+					<nav id="post-nav" class="columns small-12">
+						<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
+						<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
+					</nav>
+				<?php } ?>
 
-	<?php do_action( 'foundationpress_after_content' ); ?>
+			<!--</article>-->
+			<?php //get_sidebar(); ?>
 
-	</div>
-	<?php get_sidebar(); ?>
-</div>
-<?php get_footer(); ?>
+		</div>
+
+		<?php get_footer(); ?>

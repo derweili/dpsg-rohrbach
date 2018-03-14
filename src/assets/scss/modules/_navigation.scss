@@ -15,8 +15,43 @@
     font-style: rem-calc(20);
     font-weight: bold;
   }
+  .menu .menu{
+    padding-top: rem-calc(20);
+  }
+  .menu .menu > li:last-child{
+    padding-bottom: rem-calc(10);
+  }
+  .menu li{
+    &.is-active, &.active{
+      > a{
+        color: $white;
+        opacity: 0.8
+      }
+    }
+    ul.menu{
+      border: none;
+      li{
+        margin: 0;
+        background: $primary-color;
+        &:hover a{
+          opacity: 0.8
+        }
+      }
+    }
+  }
+
 }
 
 body{
-  margin-top: rem-calc(80);
+  @include breakpoint(medium){
+    margin-top: rem-calc(80);
+  }
+}
+
+.admin-bar .header-navigation{
+  top: rem-calc(32);
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a{
+  padding-right: rem-calc(16);
 }
