@@ -25,15 +25,10 @@ get_header(); ?>
 
 <div class="row align-middle">
   <div class="columns small-12 medium-4">
-    <img src="<?php echo get_stylesheet_directory_uri() ?>/dist/assets/img/woelfi@2x.png" alt="">
+    <img src="<?php echo get_stylesheet_directory_uri() ?>/dist/assets/img/rover-logo.png" alt="">
   </div>
   <div class="columns small-12 medium-6 medium-offset-1">
-    <p>Im Alter von sieben Jahren können Jungen und Mädchen Mitglied der Wölflingsstufe und damit der DPSG werden. In der Kinderstufe stehen die Wölflinge am Anfang einer Entdeckungsreise, in der sie bis zum 10. Lebensjahr vieles lernen, ausprobieren und erleben können.
-</p>
-    <p>Die Wölflinge treffen sich jeden Freitag von 17:00 Uhr bis 18:30 Uhr im Gruppenraum unter der Kapelle in Rohrbach. </p>
-    <p>
-      <a href="#" class="button hollow">Nachricht an die Leiter schicken</a>
-    </p>
+    <?php the_content(); ?>
   </div>
 
 
