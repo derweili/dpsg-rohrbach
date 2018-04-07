@@ -16,7 +16,7 @@
  */
 
 //Set WP Content Width
-if( ! isset( $content_width ) ) $content_width = 770;
+if( ! isset( $content_width ) ) $content_width = 1440;
 
 
 /** Various clean up functions */
@@ -66,6 +66,8 @@ require_once( 'library/amp.php' );
 require_once( 'library/template-tags.php' );
 
 require_once( 'library/register-algolia-template.php' );
+
+require_once( 'library/custom-gallery.php' );
 
 //Events
 //require_once( 'library/register-events.php' );
