@@ -8,6 +8,7 @@ import Foundation from 'foundation-sites';
 // the line below
 //import './lib/foundation-explicit-pieces';
 import './custom/gallery';
+import './custom/flex-video';
 
 
 $(document).foundation();
