@@ -69,6 +69,9 @@ require_once( 'library/register-algolia-template.php' );
 
 require_once( 'library/custom-gallery.php' );
 
+require_once( 'library/leader.php' );
+
+
 //Events
 //require_once( 'library/register-events.php' );
 
