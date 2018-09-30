@@ -31,6 +31,7 @@ function foundationpress_theme_support() {
 	add_theme_support( 'woocommerce' );
 
 
+  add_theme_support( 'align-wide' );
 
 }
 
