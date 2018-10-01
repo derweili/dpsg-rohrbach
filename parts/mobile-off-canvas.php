@@ -14,7 +14,9 @@
     <!-- <span class="title-bar-title">DPSG Sinsheim Rohrbach</span> -->
   </div>
   <div class="title-bar-right">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/img/menu-logo@2x.png" alt="Logo Deutsche Pfadfinderschaft Sankt Georg" width="90">
+    <a href="<?php echo esc_url( home_url( '/' ) ) ?>">
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/img/menu-logo@2x.png" alt="Logo Deutsche Pfadfinderschaft Sankt Georg" width="90">
+    </a>
   </div>
 </div>
 <nav class="off-canvas position-left" id="offCanvas" data-off-canvas data-position="left" data-transition="overlap" role="navigation">
