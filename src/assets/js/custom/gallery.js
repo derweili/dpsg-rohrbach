@@ -5,11 +5,17 @@ var Masonry = require('masonry-layout');
 
 var imagesLoaded = require('imagesloaded');
 
-imagesLoaded( $('.gallery'), function() {
+var $galleries = $('.gallery');
 
-    var msnry = new Masonry( '.gallery', {
-        itemSelector: '.gallery-item',
-        percentPosition: true
+$.each($galleries, function(i, e){
+  var $gallery = $(e);
+
+  imagesLoaded( $gallery, function() {
+
+    var msnry = new Masonry( e, {
+      itemSelector: '.gallery-item',
+      percentPosition: true
     });
 
-} );
+  } );
+});
