@@ -1,0 +1,36 @@
+.home-banner .next-event-teaser *{
+  color: $white;
+}
+
+.home-banner .next-event-teaser{
+  margin-top: rem-calc(40);
+}
+
+.next-event-teaser{
+  max-width: rem-calc(300);
+  margin-left: auto;
+  margin-right: auto;
+  p{
+    font-size: rem-calc(18);
+  }
+  .next-event{
+    text-align: left;
+    h4{
+      margin-bottom: 0;
+      .date,.time{
+        font-weight: normal;
+      }
+    }
+    p{
+      margin-bottom: 0;
+    }
+  }
+  .all-events{
+    margin-top: rem-calc(10);
+    display: inline-block;
+    color: $button-color;
+  }
+  a{
+    color: $button-color;
+  }
+}

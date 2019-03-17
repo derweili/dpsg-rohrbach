@@ -9,6 +9,7 @@
       </h1>
       <a href="/uber-uns/" class="button hollow">Über uns</a>
       <a href="/category/bildergalerie/" class="button">Zur Bildergalerie</a>
+      <?php get_template_part('parts/front-page-next-event-teaser'); ?>
     </div>
 
   </div>

@@ -12,6 +12,11 @@
 ?>
 
 		</section>
+
+
+		</div> <!-- .barba-container -->
+	</div> <!-- #barba-wrapper -->
+
 		<div id="footer-container">
 			<footer id="footer" class="row">
 				<?php do_action( 'foundationpress_before_footer' ); ?>

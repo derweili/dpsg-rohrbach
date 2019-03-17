@@ -47,6 +47,9 @@
 		</div>
 	</div>
 
+	<div id="barba-wrapper">
+  <div class="barba-container">
+
 	<?php get_template_part('parts/subnav'); ?>
 
 	<section class="container">
