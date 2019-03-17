@@ -24,11 +24,15 @@
     p{
       margin-bottom: 0;
     }
+    a{
+      text-decoration: underline;
+    }
   }
   .all-events{
     margin-top: rem-calc(10);
     display: inline-block;
     color: $button-color;
+    text-decoration: underline;
   }
   a{
     color: $button-color;
