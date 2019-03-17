@@ -24,7 +24,7 @@ if ( ! function_exists( 'foundationpress_top_bar_r' ) ) {
 		wp_nav_menu( array(
 			'container'      => false,
 			'menu_class'     => 'dropdown menu',
-			'items_wrap'     => '<ul id="%1$s" class="%2$s" data-dropdown-menu> <li><a href="' . esc_url( home_url( '/' ) ) . '"><img src="' . get_stylesheet_directory_uri() . '/dist/assets/img/menu-logo@2x.png" alt=""></a></li>%3$s</ul>',
+			'items_wrap'     => '<ul id="%1$s" class="%2$s" data-dropdown-menu> <li><a href="' . esc_url( home_url( '/' ) ) . '"><img src="' . get_stylesheet_directory_uri() . '/dist/assets/img/dpsg-header-logo.svg" alt="DPSG Logo weiß" width="116"></a></li>%3$s</ul>',
 			'theme_location' => 'top-bar-r',
 			'depth'          => 2,
 			'fallback_cb'    => false,
