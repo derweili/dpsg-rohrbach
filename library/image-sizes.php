@@ -1,9 +1,6 @@
 <?php
 
-add_image_size('homeslider', 1180, 450, true);
 add_image_size('galleryfeature', 362, 222, true);
-add_image_size('singlefeature', 770 );
-add_image_size('stufenpreview', 270 );
 
 
 
