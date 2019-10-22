@@ -151,14 +151,12 @@
         ]
     ],
     "menu_order": 0,
-    "position": "normal",
+    "position": "side",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": [
-        "custom_fields"
-    ],
-    "active": 1,
+    "hide_on_screen": "",
+    "active": 0,
     "description": "",
-    "modified": 1538329727
+    "modified": 1540925080
 }
